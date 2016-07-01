@@ -1,8 +1,8 @@
-'name': 'nvAtom Github Markdown'
-'scopeName': 'source.gfm.nvatom'
+'name': 'nvAtom Asciidoc'
+'scopeName': 'source.asciidoc.nvatom'
 'patterns': [
   {
-    'include': 'source.gfm'
+    'include': 'source.asciidoc'
   }
   {
     'match': '(?<!\\[)(\\[\\[)([^\\[\\]\|]+)(\\]\\])(?!\\])'

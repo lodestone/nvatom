@@ -1,30 +1,33 @@
 {
-  "name": "nvatom",
+  "name": "nvatom-plus",
   "main": "./lib/notational-velocity",
   "version": "0.11.0",
   "private": true,
   "contributors": [
     "Seongjae Lee <seongjae@gmail.com>",
     "Nikita Litvin <deltaidea@derpy.ru>",
-    "Jonathan Hoyt <hoyt@github.com>"
+    "Jonathan Hoyt <hoyt@github.com>",
+    "Matt Petty <matt@kizmeta.com>"
   ],
-  "description": "Notational Velocity for Atom",
+  "description": "Notational Velocity Plus for Atom",
   "keywords": [
     "wiki",
     "notational velocity",
     "nvatom",
     "note",
-    "notetaking"
+    "notetaking",
+    "markdown",
+    "asciidoc"
   ],
-  "repository": "https://github.com/seongjaelee/nvatom",
+  "repository": "https://github.com/lodestone/nvatom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
   "bugs": {
-    "url": "https://github.com/seongjaelee/nvatom/issues"
+    "url": "https://github.com/lodestone/nvatom/issues"
   },
-  "homepage": "https://github.com/seongjaelee/nvatom",
+  "homepage": "https://github.com/lodestone/nvatom",
   "dependencies": {
     "atom-space-pen-views": "^2.0.3",
     "chokidar": "^1.0.5",

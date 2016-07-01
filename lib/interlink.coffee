@@ -11,13 +11,13 @@ class Interlink
     @subscriptions.add atom.commands.add 'atom-workspace', 'nvatom:openInterlink': => Interlink.openInterlink()
     @subscriptions.add atom.workspace.observeTextEditors (editor) ->
       if Utility.isNote(editor.getPath())
-        editor.setGrammar(atom.grammars.grammarForScopeName('source.gfm.nvatom'))
+        editor.setGrammar(atom.grammars.grammarForScopeName('source.asciidoc.nvatom'))
 
   destroy: ->
     @subscriptions.dispose()
 
   @loadGrammarSync: ->
-    unless atom.grammars.grammarForScopeName('source.gfm.nvatom')
+    unless atom.grammars.grammarForScopeName('source.asciidoc.nvatom')
       grammarPath = path.join(atom.packages.resolvePackagePath('nvatom'), 'grammars', 'nvatom.cson')
       atom.grammars.loadGrammarSync(grammarPath)
 
@@ -41,7 +41,7 @@ class Interlink
     token = editor.tokenForBufferPosition(cursorPosition)
     return unless token
     return unless token.value
-    return unless token.scopes.indexOf('markup.underline.link.interlink.gfm') > -1
+    return unless token.scopes.indexOf('markup.underline.link.interlink') > -1
 
     interlink = Utility.trim(token.value)
     return unless interlink.length

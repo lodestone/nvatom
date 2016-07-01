@@ -15,7 +15,7 @@ module.exports =
       title: 'Extensions'
       description: 'The first extension will be used for newly created notes.'
       type: 'array'
-      default: ['.md', '.txt']
+      default: ['.adoc', '.md', '.txt']
       items:
         type: 'string'
     enableLunrPipeline:
